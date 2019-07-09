@@ -3,16 +3,35 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SearchComponent } from './search/search.component';
+import { HttpClientModule } from '@angular/common/http';
+import { TestService } from './test.service';
+import { FormsModule } from '@angular/forms';
+import { NavbarComponent } from './navbar/navbar.component';
+import { CardComponent } from './card/card.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { FavouriteComponent } from './favourite/favourite.component';
+import { ButtonComponent } from './button/button.component';
+import { FavbuttonComponent } from './favbutton/favbutton.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SearchComponent,
+    NavbarComponent,
+    CardComponent,
+    SidebarComponent,
+    FavouriteComponent,
+    ButtonComponent,
+    FavbuttonComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    AppRoutingModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [TestService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
