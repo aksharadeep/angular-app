@@ -1,17 +1,17 @@
-<app-navbar></app-navbar>
-<!-- <app-favourite></app-favourite> -->
-
-<app-search (item)="response = $event"></app-search>
-<app-favbutton></app-favbutton>
-<hr />
-
-<div class="container">
-  <div class="flex-container">
-    <div *ngFor="let item of response">
-      <div class="d-flex p-3 bg-secondary">
-        <app-card [item]="item.name"></app-card>
+<body>
+  <div style="text-align:center">
+    <app-navbar></app-navbar>
+    <br>
+    <app-search (item)="response = $event"></app-search>
+    <hr />
+    <div class="flex-container">
+      <div *ngFor="let item of response">
+        <div class="d-flex p-3 bg-black">
+          <app-card [item]="item.name"></app-card>
+        </div>
+        <app-playbutton [link]="item.url"></app-playbutton>&nbsp;
+        <app-button [itemData]="item"></app-button>
       </div>
-      <app-button [itemData]="item.name" ></app-button>
     </div>
   </div>
-</div>
+</body>

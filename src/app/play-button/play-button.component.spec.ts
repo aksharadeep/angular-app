@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FavbuttonComponent } from './favbutton.component';
+import { PlayButtonComponent } from './play-button.component';
 
-describe('FavbuttonComponent', () => {
-  let component: FavbuttonComponent;
-  let fixture: ComponentFixture<FavbuttonComponent>;
+describe('PlayButtonComponent', () => {
+  let component: PlayButtonComponent;
+  let fixture: ComponentFixture<PlayButtonComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FavbuttonComponent ]
+      declarations: [ PlayButtonComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FavbuttonComponent);
+    fixture = TestBed.createComponent(PlayButtonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

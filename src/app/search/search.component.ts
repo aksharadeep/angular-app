@@ -21,7 +21,7 @@ search() {
 
   this.serv.getArtist(this.find).subscribe((response) => {
     this.response = response.results.artistmatches.artist;
-    console.log(response);
+   // console.log(response);
   });
   this.item.emit(this.response);
 }

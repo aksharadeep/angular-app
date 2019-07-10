@@ -10,9 +10,9 @@ import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CardComponent } from './card/card.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { FavouriteComponent } from './favourite/favourite.component';
 import { ButtonComponent } from './button/button.component';
-import { FavbuttonComponent } from './favbutton/favbutton.component';
+import { PlaybuttonComponent } from './play-button/play-button.component';
+
 
 @NgModule({
   declarations: [
@@ -21,9 +21,8 @@ import { FavbuttonComponent } from './favbutton/favbutton.component';
     NavbarComponent,
     CardComponent,
     SidebarComponent,
-    FavouriteComponent,
     ButtonComponent,
-    FavbuttonComponent
+    PlaybuttonComponent
   ],
   imports: [
     BrowserModule,
